@@ -14,66 +14,62 @@ import com.cognizant.login.LoginToCognizant;
 
 public class TestProject extends BaseRequirements{
 	
-	LoginToCognizant loginObj = new LoginToCognizant();
-	ProfileInfo info = new ProfileInfo();
-	NewsInfo news = new NewsInfo();
-	ReadNewsData data = new ReadNewsData();
-
+	LoginToCognizant loginObj;
+	ProfileInfo info;
+	NewsInfo news;
+	ReadNewsData data;
+	
 	@BeforeSuite
 	public void selectDriver() throws IOException {
 		
 		logger = report.createTest("Select Driver");
 		
-		reportInfo("Initializing the Browser");
 		selectBrowser();
-		reportInfo("Loading the required Files");
+		
 		loadData();
+		
 		reportPass("Select Driver passed..");
 	}
 	
 	@Test
 	public void loginMicrosoft() throws IOException{
 		
+		loginObj = new LoginToCognizant();
 		createTest("Login to Be.Cognizant");
 		
-		reportInfo("Starting the Log-in Process.");
-		
 		loginObj.login();
-		
-		reportPass("Logged into Be.Cognizant successfully");
-		
 	}
 	
 	@Test( dependsOnMethods = {"loginMicrosoft"} )
 	public void getProfileInfo() throws IOException {
 		
+		info = new ProfileInfo();
 		createTest("Get Profile Information");
-		
-		reportInfo("Retreiving Profile Info");
 		
 		info.getProfileInfo();
 		
-		reportPass("Retrieved Profile data successfully");
 	}
 	
 	@Test( dependsOnMethods = {"getProfileInfo"} )
 	public void newsInfo() throws IOException {
 		
+		news = new NewsInfo();
+		
 		createTest("Information regarding News");
 		
 		news.validateTitle();
 		
-		reportInfo("Getting count of Featured News in Be.Cognizant");
-		
 		news.countOfNews();
 		
-		reportPass("News count displayed successfully.");
 		
 		
 	}
 	
 	@Test( dependsOnMethods = {"newsInfo"} )
 	public void readNewsData() throws IOException {
+		
+		data = new ReadNewsData();
+		
 		createTest("Read News Data");
 		
 		data.readNewsData();
@@ -84,7 +80,11 @@ public class TestProject extends BaseRequirements{
 	
 	@AfterTest
 	public void closeBrowser() {
+		
+		createTest("After Test");
+		
 		closeDriver();
-		report.flush();
+		
+		flushReport();
 	}
 }

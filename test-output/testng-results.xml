@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-19T19:19:17 IST" name="Default suite" finished-at="2023-04-19T19:21:33 IST" duration-ms="135762">
+  <suite started-at="2023-04-21T13:28:39 IST" name="Default suite" finished-at="2023-04-21T13:31:03 IST" duration-ms="143961">
     <groups>
     </groups>
-    <test started-at="2023-04-19T19:19:17 IST" name="Default test" finished-at="2023-04-19T19:21:33 IST" duration-ms="135762">
+    <test started-at="2023-04-21T13:28:39 IST" name="Default test" finished-at="2023-04-21T13:31:03 IST" duration-ms="143961">
       <class name="com.becognizant.test.TestProject">
-        <test-method is-config="true" signature="selectDriver()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:19:07 IST" name="selectDriver" finished-at="2023-04-19T19:19:17 IST" duration-ms="9519" status="PASS">
+        <test-method is-config="true" signature="selectDriver()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:28:33 IST" name="selectDriver" finished-at="2023-04-21T13:28:39 IST" duration-ms="6432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDriver -->
-        <test-method signature="loginMicrosoft()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:19:17 IST" name="loginMicrosoft" finished-at="2023-04-19T19:20:22 IST" duration-ms="65512" status="PASS">
+        <test-method signature="loginMicrosoft()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:28:39 IST" name="loginMicrosoft" finished-at="2023-04-21T13:29:54 IST" duration-ms="74236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMicrosoft -->
-        <test-method signature="getProfileInfo()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:20:22 IST" name="getProfileInfo" finished-at="2023-04-19T19:20:23 IST" depends-on-methods="com.becognizant.test.TestProject.loginMicrosoft" duration-ms="320" status="PASS">
+        <test-method signature="getProfileInfo()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:29:54 IST" name="getProfileInfo" finished-at="2023-04-21T13:29:54 IST" depends-on-methods="com.becognizant.test.TestProject.loginMicrosoft" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProfileInfo -->
-        <test-method signature="newsInfo()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:20:23 IST" name="newsInfo" finished-at="2023-04-19T19:20:23 IST" depends-on-methods="com.becognizant.test.TestProject.getProfileInfo" duration-ms="299" status="PASS">
+        <test-method signature="newsInfo()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:29:54 IST" name="newsInfo" finished-at="2023-04-21T13:30:00 IST" depends-on-methods="com.becognizant.test.TestProject.getProfileInfo" duration-ms="6058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newsInfo -->
-        <test-method signature="readNewsData()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:20:23 IST" name="readNewsData" finished-at="2023-04-19T19:21:32 IST" depends-on-methods="com.becognizant.test.TestProject.newsInfo" duration-ms="69040" status="PASS">
+        <test-method signature="readNewsData()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:30:00 IST" name="readNewsData" finished-at="2023-04-21T13:31:03 IST" depends-on-methods="com.becognizant.test.TestProject.newsInfo" duration-ms="62645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readNewsData -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.becognizant.test.TestProject@4d465b11]" started-at="2023-04-19T19:21:32 IST" name="closeBrowser" finished-at="2023-04-19T19:21:33 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.becognizant.test.TestProject@25084a1e]" started-at="2023-04-21T13:31:03 IST" name="closeBrowser" finished-at="2023-04-21T13:31:03 IST" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

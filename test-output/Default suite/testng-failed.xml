@@ -8,9 +8,9 @@
           <include name="closeBrowser"/>
           <include name="selectDriver"/>
           <include name="getProfileInfo"/>
-          <include name="readNewsData"/>
           <include name="loginMicrosoft"/>
           <include name="newsInfo"/>
+          <include name="readNewsData"/>
         </methods>
       </class> <!-- com.becognizant.test.TestProject -->
     </classes>
